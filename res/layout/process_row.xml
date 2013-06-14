@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/text_process_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/filler_process_name"
+	        android:textSize="20sp"
+	        android:textAppearance="@style/Text.Default" />
+	    
+	    <TextView
+	        android:id="@+id/text_process_class"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/filler_class" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+	    <TextView
+	        android:id="@+id/label_process_pid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:text="@string/label_pid"
+	        android:textAppearance="@style/Text.Label" />
+	    
+	    <TextView
+	        android:id="@+id/text_process_pid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/filler_process_pid"
+	        android:textAppearance="@style/Text.Default" />
+	    
+	    <TextView
+	        android:id="@+id/label_process_uid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:text="@string/label_uid"
+	        android:textAppearance="@style/Text.Label" />
+	    
+	    <TextView
+	        android:id="@+id/text_process_uid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/filler_process_uid"
+	        android:textAppearance="@style/Text.Default" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/label_process_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="@string/label_type"
+        android:textAppearance="@style/Text.Label" />
+    
+    <TextView
+        android:id="@+id/text_process_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="@string/filler_type"
+        android:textAppearance="@style/Text.Default" />
+    
+</LinearLayout>

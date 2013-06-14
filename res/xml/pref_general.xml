@@ -1,0 +1,7 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="include_system_tasks"
+        android:summary="@string/pref_description_include_system_tasks"
+        android:title="@string/pref_title_include_system_tasks" />
+</PreferenceScreen>

@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.DeviceDefault">
+        
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+
+    <style name="Text.Header" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/text_header</item>
+    </style>
+    
+    
+    <style name="Text.Label" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/text_label</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+   
+    <style name="Text.Default" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="Text.Default.Alt" parent="@style/Text.Default">
+        <item name="android:textColor">@color/text_default_alt</item>
+    </style>
+    
+    <color name="text_header">#f0885be4</color>
+    <color name="text_label">#f006628e</color>
+    <color name="text_default_alt">#f0B9c6d1</color>
+</resources>

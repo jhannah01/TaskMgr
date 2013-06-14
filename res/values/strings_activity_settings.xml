@@ -1,0 +1,6 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_description_include_system_tasks">Determines if system processes and tasks are included in the lists</string>
+    <string name="pref_title_include_system_tasks">Include System Tasks?</string>
+</resources>
