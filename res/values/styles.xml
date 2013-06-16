@@ -13,6 +13,10 @@
         <item name="android:textColor">@color/text_header</item>
     </style>
     
+    <style name="Text.Header.Alt" parent="@style/Text.Header">
+        <item name="android:textColor">@color/text_header_alt</item>
+    </style>
+    
     
     <style name="Text.Label" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/text_label</item>
@@ -28,6 +32,7 @@
     </style>
     
     <color name="text_header">#f0885be4</color>
+    <color name="text_header_alt">#f0ff6c00</color>
     <color name="text_label">#f006628e</color>
-    <color name="text_default_alt">#f0B9c6d1</color>
+    <color name="text_default_alt">#f0b9c6d1</color>
 </resources>

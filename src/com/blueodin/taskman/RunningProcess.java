@@ -13,8 +13,8 @@ public class RunningProcess {
 	private String mClassName;
 	private ProcessType mType;
 	
-	private int mPid = -1;
-	private int mUid = -1;
+	private int mPid = 0;
+	private int mUid = 0;
 	
 	public RunningProcess(String name, ProcessType processType) {
 		this(name, "", processType);
@@ -91,11 +91,11 @@ public class RunningProcess {
 	}
 	
 	public boolean hasPid() {
-		return (mPid != -1);
+		return (mPid > 0);
 	}
 	
 	public boolean hasUid() {
-		return (mUid != -1);
+		return (mUid > 0);
 	}
 	
 	public int getPid() {

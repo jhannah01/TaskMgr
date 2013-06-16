@@ -16,4 +16,7 @@
     <string name="label_overview">Overview:</string>
     <string name="label_type">Type:</string>
     <string name="filler_type">Task</string>
+    <string name="label_nothing_selected">Nothing Selected...</string>
+    <string name="filler_label">Label</string>
+    <string name="filler_content">Content</string>
 </resources>

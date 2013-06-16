@@ -115,7 +115,7 @@ public class TasksListFragment extends SherlockListFragment implements OnPrefere
 		
 		public void update() {
 			clear();
-			addAll(RunningProcess.getRunningProcesses(mActivityManager));
+			addAll(RunningProcess.getRunningProcesses(mActivityManager, mProcessType));
 			notifyDataSetChanged();
 		}
 		
@@ -137,9 +137,7 @@ public class TasksListFragment extends SherlockListFragment implements OnPrefere
 			((TextView)rowView.findViewById(R.id.text_process_name)).setText(process.getName());
 			((TextView)rowView.findViewById(R.id.text_process_class)).setText(process.hasClassName() ? process.getClassName() : "");
 			((TextView)rowView.findViewById(R.id.text_process_type)).setText(process.getType().toString());
-			((TextView)rowView.findViewById(R.id.text_process_pid)).setText(process.hasPid() ? String.format("%d", process.getPid()) : "N/A");
-			((TextView)rowView.findViewById(R.id.text_process_uid)).setText(process.hasUid() ? String.format("%d", process.getUid()) : "N/A");
-			
+
 			return rowView;
 		}
 	}
