@@ -5,22 +5,22 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/label_process_detail_memory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginRight="5dp"
         android:textAppearance="@style/Text.Label"
-        android:text="TextView" />
+        android:text="Memory:" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_process_detail_memory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView1"
-        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignBaseline="@+id/label_process_detail_memory"
+        android:layout_toRightOf="@+id/label_process_detail_memory"
         android:textAppearance="@style/Text.Default"
-        android:text="Small Text" />
+        android:text="5.2 MB" />
 
 </RelativeLayout>

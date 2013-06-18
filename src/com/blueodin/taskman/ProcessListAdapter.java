@@ -100,13 +100,20 @@ public class ProcessListAdapter extends BaseExpandableListAdapter {
 		ProcessEntry entry = getGroup(groupPosition);
 		MemoryInfo memoryInfo = entry.getMemoryInfo();
 		
-		memoryInfo.
-				
 		View view = mLayoutInflater.inflate(R.layout.process_detail_row, parent, false);
 		
-		
+		((TextView)view.findViewById(R.id.text_process_detail_memory)).setText(formatMemoryInfo(memoryInfo));
 		
 		return view;
+	}
+	
+	private String formatMemoryInfo(MemoryInfo memoryInfo) {
+		int c = memoryInfo.getTotalPss();
+		
+		if(c < 1024)
+			return String.format("%d bytes");
+		
+		return String.format("%.02f MB", (c / 1024));
 	}
 
 	@Override
